@@ -15,3 +15,15 @@ next.user-config.*
 node_modules/
 .next/
 .DS_Store
+*.log
+tsconfig.tsbuildinfo
+
+# Local source copies for showcased projects
+project-source/**/__pycache__/
+project-source/**/.pytest_cache/
+project-source/**/.mypy_cache/
+project-source/**/.venv/
+project-source/**/venv/
+project-source/**/env/
+project-source/**/db.sqlite3
+project-source/**/media/

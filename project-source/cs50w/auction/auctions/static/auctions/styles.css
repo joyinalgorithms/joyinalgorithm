@@ -1,0 +1,126 @@
+body {
+    padding: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.item-image {
+    width: 400px;
+    height: 500px;
+}
+
+.auction-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 500px;
+    position: relative;
+    height: 500px;
+}
+
+.details-container {
+    flex: 1;
+
+}
+
+.title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title:hover {
+    color: black;
+}
+
+.description {
+    color: rgb(25, 25, 25);
+    font-size: 20px;
+}
+
+.category {
+    color: grey;
+}
+
+.category-items {
+    font-size: 20px;
+    color: grey;
+}
+
+.category-items:hover {
+    color: black;
+
+}
+
+.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.item-image-listing {
+    height: 650px;
+}
+
+.date {
+    color: grey;
+    margin-top: 0;
+}
+
+.user {
+    font-size: 15px;
+}
+
+#comment {
+    margin-top: 20px;
+    width: 400px;
+    padding-bottom: 100px;
+}
+
+button,
+.button {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 10px;
+}
+
+.submit-btn,
+.place-bid {
+    display: block;
+    margin-left: 320px;
+}
+
+.comments-header {
+    margin-bottom: 30px;
+}
+
+#bid {
+    width: 400px;
+}
+
+.comment-user {
+    color: grey;
+    margin-top: -5px;
+}
+
+.watchlist-btn {
+    position: absolute;
+    bottom: -130px;
+    right: 90px;
+}
+
+.input-box {
+    width: 90%;
+}
+
+.new-container {
+    width: 300px;
+
+}

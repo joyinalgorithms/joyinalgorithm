@@ -132,10 +132,9 @@ export default function HomePage() {
                 lineHeight: 1.7,
               }}
             >
-              I build modern, responsive, and scalable web applications using cutting-edge 
-              technologies. Passionate about creating intuitive user experiences and 
-              writing clean, maintainable code. From frontend interfaces to backend 
-              systems, I bring ideas to life through code.
+              I build scalable, modern web applications with clean code and intuitive design. Passionate about turning ideas into impactful digital solutions.
+              <br /><br />
+              🏆 Finalist & Special Citation Awardee — Project LIF, recognized by National Academy of Science and Technology (NAST).
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, justifyContent: { xs: 'center', md: 'flex-start' } }}>
               <Link to={PATHS.PROJECTS} style={{ textDecoration: 'none' }}>

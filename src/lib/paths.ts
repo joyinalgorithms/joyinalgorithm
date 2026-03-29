@@ -2,7 +2,7 @@ export const PATHS = {
   HOME: '/',
   PROJECTS: '/projects',
   PROJECT_DETAIL: '/projects/:id',
-  UI_PROJECT: '/ui/:project',
+  CS50X_WEB_PROJECT: '/projects/cs50x-web/:project',
   RESUME: '/resume',
   TECH_STACK: '/tech-stack',
   CERTIFICATIONS: '/certifications',
@@ -10,7 +10,5 @@ export const PATHS = {
 } as const
 
 export const getProjectDetailPath = (id: string) => `/projects/${id}`
-
-export const getUiProjectPath = (project: string) => `/ui/${project}`
-
-
+export const getCs50xWebProjectPath = (project: string) =>
+  `/projects/cs50x-web/${project}`

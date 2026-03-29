@@ -1,0 +1,29 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    {% if selected_category %}
+        <h2>Category: {{ selected_category }}</h2>
+    {% else %}
+        <h2>Active Listings</h2>
+    {% endif %}
+    {% for auction in auctionlist %}
+        <div class="auction-container">
+            <div class="image-container">
+                <img class="item-image" src="{{ auction.image.url }}">
+            </div>
+            <div class="details-container less-margin">
+                <a class="title" href="{% url 'listing' auction.id %}">{{ auction.title }}</a>
+                <p class="description">{{ auction.description }}</p>
+                <p class="category">{{ auction.category }}</p>
+                <p class="price">Price: ${{ auction.startbid|floatformat:2 }}</p>
+                <p class="date">Created: {{ auction.created_at|date:"F d, Y" }}</p>
+            </div>
+        </div>
+
+    {% empty %}
+        <h4>No Active Listings</h4>
+    {% endfor %}
+
+
+{% endblock %}
