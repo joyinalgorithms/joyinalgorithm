@@ -75,7 +75,7 @@ export const cs50xWebProjects: Project[] = [
     id: "cs50web-dna",
     title: "DNA",
     description: "A program that identifies individuals based on DNA STR patterns by comparing sequences against a database.",
-    image: "/preview/credit.png",
+    image: "/preview/dna.png",
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
