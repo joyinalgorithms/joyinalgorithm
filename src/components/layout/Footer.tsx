@@ -1,9 +1,11 @@
-import Box from '@mui/joy/Box'
-import Typography from '@mui/joy/Typography'
-import Link from '@mui/joy/Link'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import EmailIcon from '@mui/icons-material/Email'
+'use client';
+
+import Box from '@mui/joy/Box';
+import Typography from '@mui/joy/Typography';
+import Link from '@mui/joy/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
   return (
@@ -38,12 +40,12 @@ export default function Footer() {
             fontFamily: 'code',
           }}
         >
-          joyinalgorithm &copy; {new Date().getFullYear()}
+          joyinalgorithm &copy; 2026
         </Typography>
 
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Link
-            href="https://github.com"
+            href="https://github.com/joybernal"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -57,7 +59,7 @@ export default function Footer() {
             <GitHubIcon />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/joy-bernal-390297369/"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -71,7 +73,7 @@ export default function Footer() {
             <LinkedInIcon />
           </Link>
           <Link
-            href="mailto:contact@example.com"
+            href="mailto:joyinalgorithm@gmail.com"
             sx={{
               color: 'text.tertiary',
               transition: 'color 0.2s ease',
@@ -85,5 +87,5 @@ export default function Footer() {
         </Box>
       </Box>
     </Box>
-  )
+  );
 }

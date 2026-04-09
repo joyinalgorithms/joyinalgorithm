@@ -1,41 +1,42 @@
-import { useEffect, useState } from 'react'
-import Box from '@mui/joy/Box'
+'use client';
+
+import { useEffect, useState } from 'react';
+import Box from '@mui/joy/Box';
 
 interface BinaryParticle {
-  id: number
-  x: number
-  y: number
-  value: string
-  duration: number
-  delay: number
-  opacity: number
-  size: number
+  id: number;
+  x: number;
+  y: number;
+  value: string;
+  duration: number;
+  delay: number;
+  opacity: number;
+  size: number;
 }
 
 export default function FloatingBinary() {
-  const [particles, setParticles] = useState<BinaryParticle[]>([])
+  const [particles, setParticles] = useState<BinaryParticle[]>([]);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const createParticles = () => {
-      const newParticles: BinaryParticle[] = []
-      for (let i = 0; i < 40; i++) {
-        newParticles.push({
-          id: i,
-          x: Math.random() * 100,
-          y: Math.random() * 100,
-          value: Math.random() > 0.5 ? '1' : '0',
-          duration: 15 + Math.random() * 20,
-          delay: Math.random() * 15,
-          opacity: 0.1 + Math.random() * 0.2,
-          size: 12 + Math.random() * 10,
-        })
-      }
-      setParticles(newParticles)
+    setMounted(true);
+    const newParticles: BinaryParticle[] = [];
+    for (let i = 0; i < 40; i++) {
+      newParticles.push({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        value: Math.random() > 0.5 ? '1' : '0',
+        duration: 15 + Math.random() * 20,
+        delay: Math.random() * 15,
+        opacity: 0.1 + Math.random() * 0.2,
+        size: 12 + Math.random() * 10,
+      });
     }
-    createParticles()
-  }, [])
+    setParticles(newParticles);
+  }, []);
 
-  if (particles.length === 0) return null
+  if (!mounted || particles.length === 0) return null;
 
   return (
     <Box
@@ -50,6 +51,26 @@ export default function FloatingBinary() {
         overflow: 'hidden',
       }}
     >
+      <style>
+        {`
+          @keyframes binaryFloat {
+            0% {
+              transform: translateY(0) rotate(0deg);
+              opacity: 0;
+            }
+            10% {
+              opacity: 1;
+            }
+            90% {
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(-100vh) rotate(360deg);
+              opacity: 0;
+            }
+          }
+        `}
+      </style>
       {particles.map((particle) => (
         <Box
           key={particle.id}
@@ -72,5 +93,5 @@ export default function FloatingBinary() {
         </Box>
       ))}
     </Box>
-  )
+  );
 }

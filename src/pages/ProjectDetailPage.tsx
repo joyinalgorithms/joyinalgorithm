@@ -9,7 +9,7 @@ import Grid from '@mui/joy/Grid'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import LaunchIcon from '@mui/icons-material/Launch'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import { PATHS } from '@/lib/paths'
+import { PATHS } from '@/routes/paths'
 
 // This would typically come from an API or data file
 const projectData: Record<string, {

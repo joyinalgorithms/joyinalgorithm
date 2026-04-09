@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import Box from '@mui/joy/Box'
-import IconButton from '@mui/joy/IconButton'
-import Typography from '@mui/joy/Typography'
-import Drawer from '@mui/joy/Drawer'
-import List from '@mui/joy/List'
-import ListItemButton from '@mui/joy/ListItemButton'
-import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close'
-import HomeIcon from '@mui/icons-material/Home'
-import FolderIcon from '@mui/icons-material/Folder'
-import DescriptionIcon from '@mui/icons-material/Description'
-import CodeIcon from '@mui/icons-material/Code'
-import VerifiedIcon from '@mui/icons-material/Verified'
-import EmailIcon from '@mui/icons-material/Email'
-import { PATHS } from '@/lib/paths'
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Box from '@mui/joy/Box';
+import IconButton from '@mui/joy/IconButton';
+import Typography from '@mui/joy/Typography';
+import Drawer from '@mui/joy/Drawer';
+import List from '@mui/joy/List';
+import ListItemButton from '@mui/joy/ListItemButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import HomeIcon from '@mui/icons-material/Home';
+import FolderIcon from '@mui/icons-material/Folder';
+import DescriptionIcon from '@mui/icons-material/Description';
+import CodeIcon from '@mui/icons-material/Code';
+import VerifiedIcon from '@mui/icons-material/Verified';
+import EmailIcon from '@mui/icons-material/Email';
+import { PATHS } from '@/routes/paths';
 
 const navItems = [
   { label: 'Home', path: PATHS.HOME, icon: <HomeIcon /> },
@@ -23,15 +23,15 @@ const navItems = [
   { label: 'Tech Stack', path: PATHS.TECH_STACK, icon: <CodeIcon /> },
   { label: 'Certifications', path: PATHS.CERTIFICATIONS, icon: <VerifiedIcon /> },
   { label: 'Contact Me', path: PATHS.CONTACT, icon: <EmailIcon /> },
-]
+];
 
 export default function Navigation() {
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const location = useLocation()
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen)
-  }
+    setMobileOpen(!mobileOpen);
+  };
 
   return (
     <>
@@ -41,10 +41,11 @@ export default function Navigation() {
           position: 'sticky',
           top: 0,
           zIndex: 1100,
-          bgcolor: 'rgba(10, 10, 10, 0.8)',
-          backdropFilter: 'blur(10px)',
+          bgcolor: 'rgba(10, 10, 10, 0.95)',
+          backdropFilter: 'blur(20px)',
           borderBottom: '1px solid',
           borderColor: 'neutral.800',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
         }}
       >
         <Box
@@ -60,14 +61,14 @@ export default function Navigation() {
         >
           <Link to={PATHS.HOME} style={{ textDecoration: 'none' }}>
             <img
-              src="/favicon.svg"
+              src="favicon.ico"
               alt="CJB"
               style={{
                 height: 36,
                 width: 36,
                 cursor: 'pointer',
                 transition: 'transform 0.2s ease',
-              }}
+              }}  
               onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.08)')}
               onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
             />
@@ -88,14 +89,17 @@ export default function Navigation() {
                     px: 2,
                     py: 1,
                     borderRadius: '8px',
-                    color: location.pathname === item.path ? 'primary.500' : 'text.secondary',
-                    bgcolor: location.pathname === item.path ? 'rgba(0, 212, 255, 0.1)' : 'transparent',
-                    fontWeight: location.pathname === item.path ? 600 : 400,
+                    color: location.pathname === item.path ? 'primary.400' : 'text.primary',
+                    bgcolor: location.pathname === item.path ? 'rgba(0, 212, 255, 0.15)' : 'transparent',
+                    fontWeight: location.pathname === item.path ? 600 : 500,
                     fontSize: '0.875rem',
                     transition: 'all 0.2s ease',
+                    border: location.pathname === item.path ? '1px solid' : '1px solid transparent',
+                    borderColor: location.pathname === item.path ? 'primary.600' : 'transparent',
                     '&:hover': {
                       color: 'primary.400',
-                      bgcolor: 'rgba(0, 212, 255, 0.05)',
+                      bgcolor: 'rgba(0, 212, 255, 0.08)',
+                      borderColor: 'primary.800',
                     },
                   }}
                 >
@@ -147,7 +151,7 @@ export default function Navigation() {
                   borderRadius: '8px',
                   mb: 1,
                   gap: 2,
-                  color: location.pathname === item.path ? 'primary.500' : 'text.secondary',
+                  color: location.pathname === item.path ? 'primary.400' : 'text.secondary',
                   '&.Mui-selected': {
                     bgcolor: 'rgba(0, 212, 255, 0.1)',
                   },
@@ -161,5 +165,5 @@ export default function Navigation() {
         </List>
       </Drawer>
     </>
-  )
+  );
 }
