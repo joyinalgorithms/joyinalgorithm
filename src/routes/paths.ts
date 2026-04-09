@@ -9,6 +9,14 @@ export const PATHS = {
   CS50X_WEB: {
     ROOT: '/projects/cs50x-web',
     PROJECT: '/projects/cs50x-web/:project',
+    CREDIT: '/projects/cs50x-web/credit',
+    SCRABBLE: '/projects/cs50x-web/scrabble',
+    READABILITY: '/projects/cs50x-web/readability',
+    CAESAR: '/projects/cs50x-web/caesar',
+    SUBSTITUTION: '/projects/cs50x-web/substitution',
+    PLURALITY: '/projects/cs50x-web/plurality',
+    RUNOFF: '/projects/cs50x-web/runoff',
+    FILTER: '/projects/cs50x-web/filter',
   },
   CS50W: {
     ROOT: '/projects/cs50w',
