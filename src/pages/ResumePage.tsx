@@ -12,6 +12,18 @@ import SchoolIcon from '@mui/icons-material/School'
 
 const workExperience = [
   {
+    title: 'On-the-Job Training (OJT) – IT / Systems Development Intern',
+    company: 'Amerasia International Terminal Services Inc.',
+    period: 'January 2026 - April 2026',
+    description: 'Co-developed an HR Information System to streamline employee data management, attendance tracking, and HR processes.',
+    highlights: [
+      'Assisted in the development of a Fuel Monitoring System for tracking fuel usage, logs, and operational efficiency.',
+      'Collaborated with the development team to design, test, and implement system features and improvements.',
+      'Enhanced and optimized the company’s existing website, improving functionality, performance, and user experience.',
+      'Participated in debugging, troubleshooting, and system maintenance to ensure smooth operations.',
+    ],
+  },
+  {
     title: 'Brand Marketing & Sales Assistant (Freelance)',
     company: 'E-Commerce Company',
     period: '2020 – 2023',
