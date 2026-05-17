@@ -103,7 +103,7 @@ export default function ContactPage() {
             mx: 'auto',
           }}
         >
-          Feel free to reach out for collaborations, opportunities, or just to say hello.
+          Feel free to reach out for collaborations or opportunities.
           I&apos;m always open to discussing new projects and ideas.
         </Typography>
 

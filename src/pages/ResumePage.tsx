@@ -12,8 +12,8 @@ import SchoolIcon from '@mui/icons-material/School'
 
 const workExperience = [
   {
-    title: 'On-the-Job Training (OJT) – IT / Systems Development Intern',
-    company: 'Amerasia International Terminal Services Inc.',
+    title: 'On-the-Job Training (OJT) – Junior Web Developer',
+    company: 'Amerasia International Terminal Services Inc. Subic Bay Freeport Zone ',
     period: 'January 2026 - April 2026',
     description: 'Co-developed an HR Information System to streamline employee data management, attendance tracking, and HR processes.',
     highlights: [
@@ -175,7 +175,7 @@ export default function ResumePage() {
             startDecorator={<VisibilityIcon />}
             variant="outlined"
             component="a"
-            href="/resume.pdf"
+            href="/JoyBernal_Resume.pdf"
             target="_blank"
             sx={{
               borderColor: 'primary.500',
@@ -191,7 +191,7 @@ export default function ResumePage() {
             size="lg"
             startDecorator={<DownloadIcon />}
             component="a"
-            href="/resume.pdf"
+            href="/JoyBernal_Resume.pdf"
             download
             sx={{
               background: 'linear-gradient(135deg, #00d4ff 0%, #00ff88 100%)',

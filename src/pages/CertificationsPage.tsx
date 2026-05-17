@@ -27,7 +27,7 @@ interface Certificate {
 const certificates: Certificate[] = [
     {
     id: '1',
-    title: 'Special Citations Award | Finalist \n (Official certificate is not yet released)',
+    title: 'Special Citations Award | Finalist',
     issuer: 'National Academy of Science and Technology – Magsaysay Future Engineer / Technologist Awards ',
     date: 'December 2025',
     image: '/nast_pic.jpg',
