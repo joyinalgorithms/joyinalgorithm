@@ -8,7 +8,7 @@ export const webAppProjects: Project[] = [
     image: "/preview/consumption_tracker.png",
     tags: ["React", "Node.js", "Typescript", "Joy UI", "Sqlite3", "Prisma"],
     github: "https://github.com/joybernal/consumption_tracker",
-    live: "https://consumption-tracker-pink.vercel.app/",
+    
   },
   {
     id: "webapp-lemonaddie",
