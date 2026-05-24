@@ -2,10 +2,10 @@ import { Project } from '../../types/project';
 
 export const webAppProjects: Project[] = [
   {
-    id: "webapp-consumption-tracker",
-    title: "Consumption Tracker",
+    id: "webapp-ai-consumption-tracker",
+    title: "AI Consumption Tracker",
     description: "A web application for tracking and analyzing consumption data.",
-    image: "/preview/consumption_tracker.jpg",
+    image: "/preview/consumption_tracker.png",
     tags: ["React", "Node.js", "Typescript", "Joy UI", "Sqlite3", "Prisma"],
     github: "https://github.com/joybernal/consumption_tracker",
     live: "https://consumption-tracker-pink.vercel.app/",
@@ -63,5 +63,14 @@ export const webAppProjects: Project[] = [
     tags: ["Python", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/joybernal/writers-haven",
     video: "/videos/web-apps/writers.mp4",
+  },
+  {
+    id: "webapp-memoria",
+    title: "Memoria's Photography Studio",
+    description: "A website for showcasing photography work and booking sessions.",
+    image: "/preview/memoria.png",
+    tags: ["Python", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/joybernal/memoria-photography",
+    video: "/videos/web-apps/memoria.mp4",
   },
 ];

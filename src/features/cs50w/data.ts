@@ -33,4 +33,12 @@ export const cs50wProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript", "Python", "Django", "Bootstrap", "Sqlite", "Rest API"],
     video: "/videos/cs50w/mail.mp4",
   },
+  {
+    id: "cs50w-network",
+    title: "Network",
+    description: "A social media platform that allows users to create profiles, post updates, and connect with other users.",
+    image: "/preview/network.png",
+    tags: ["HTML", "CSS", "JavaScript", "Python", "Django", "Bootstrap", "Sqlite", "Rest API"],
+    video: "/videos/cs50w/mail.mp4",
+  },
 ];
