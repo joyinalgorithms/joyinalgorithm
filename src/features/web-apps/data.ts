@@ -2,13 +2,25 @@ import { Project } from '../../types/project';
 
 export const webAppProjects: Project[] = [
   {
-    id: "webapp-ai-consumption-tracker",
-    title: "AI Consumption Tracker",
-    description: "A web application for tracking and analyzing consumption data.",
-    image: "/preview/consumption_tracker.png",
+    id: "webapp-ai-finance-tracker",
+    title: "AI Finance Tracker",
+    description: "A web application for tracking and analyzing finance data.",
+    image: "/preview/finance_tracker.jpg",
     tags: ["React", "Node.js", "Typescript", "Joy UI", "Sqlite3", "Prisma"],
-    github: "https://github.com/joybernal/consumption_tracker",
-    
+  },
+  {
+    id: "webapp-smart-tasks-tracker",
+    title: "Smart Tasks Tracker",
+    description: "A goal and session tracking app that helps users log time spent on personal goals, track weekly progress, visualize activity patterns, and maintain streaks. It provides a dashboard with weekly activity charts, goal breakdowns, personalized motivation feedback, and tools like a planner, affirmations, and statistics to support consistent habit-building and identity-focused growth.",
+    image: "/preview/tasks_tracker.jpg",
+    tags: ["React", "Typescript", "Joy UI"],
+  },
+  {
+    id: "webapp-journal",
+    title: "Solace Journal",
+    description: "A modern, secure journaling application that helps users capture their thoughts, track emotions and habits, organize memories, and gain meaningful insights through a beautiful and distraction-free writing experience.",
+    image: "/preview/journal.png",
+    tags: ["React", "Typescript", "Joy UI"],
   },
   {
     id: "webapp-lemonaddie",
@@ -16,7 +28,6 @@ export const webAppProjects: Project[] = [
     description: "An end-to-end e-commerce platform featuring user accounts, product management, and seamless checkout, tailored for selling lifestyle goods.",
     image: "/preview/lemonaddie.png",
     tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/lemonaddie-deploy",
     video: "/videos/web-apps/lemonaddie.mp4",
   },
   {
@@ -25,17 +36,7 @@ export const webAppProjects: Project[] = [
     description: "A business website with integrated booking, service browsing, and project showcase functionality tailored for a modern construction firm.",
     image: "/preview/tripleq.png",
     tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/tripleq-website",
     video: "/videos/web-apps/tripleq.mp4",
-  },
-  {
-    id: "webapp-journal",
-    title: "Journal Website",
-    description: "A full stack journaling website that allows users to write, manage, and share personal entries with privacy controls and community features.",
-    image: "/preview/journal.png",
-    tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/journal",
-    video: "/videos/web-apps/journal.mp4",
   },
   {
     id: "webapp-ems",
@@ -43,7 +44,6 @@ export const webAppProjects: Project[] = [
     description: "A robust employee management system that handles onboarding, attendance, roles, and administrative operations for small to mid-sized businesses.",
     image: "/preview/ems.png",
     tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/emsdeploy",
     video: "/videos/web-apps/ems.mp4",
   },
   {
@@ -52,17 +52,7 @@ export const webAppProjects: Project[] = [
     description: "A full-featured e-commerce application focused on book discovery, user reviews, and personalized shopping experiences.",
     image: "/preview/books.png",
     tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/bookit",
     video: "/videos/web-apps/bookstore.mp4",
-  },
-  {
-    id: "webapp-writers",
-    title: "Writers Website",
-    description: "A website for writers to let their imagination run free.",
-    image: "/preview/writershaven.png",
-    tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/writers-haven",
-    video: "/videos/web-apps/writers.mp4",
   },
   {
     id: "webapp-memoria",
@@ -70,7 +60,13 @@ export const webAppProjects: Project[] = [
     description: "A website for showcasing photography work and booking sessions.",
     image: "/preview/memoria.png",
     tags: ["Python", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/joybernal/memoria-photography",
     video: "/videos/web-apps/memoria.mp4",
+  },
+    {
+    id: "webapp-timer",
+    title: "Timer",
+    description: "Timekeeping & Ergonomic Loop Assistant",
+    image: "/preview/timer.jpg",
+    tags: ["React", "Typescript", "Joy UI"], 
   },
 ];
